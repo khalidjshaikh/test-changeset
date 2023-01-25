@@ -28,6 +28,7 @@ node(POD_LABEL) {
   container('container-name') {
       sh 'printenv|sort'
       sh 'ls'
+      sh 'pwd'
     }
   }
 }
