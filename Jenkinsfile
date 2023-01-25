@@ -31,9 +31,9 @@ node(POD_LABEL) {
       sh 'pwd'
 
          stage("Test changeset") {
-             when {
+            //  when {
                  changeset "**/Jenkinsfile"
-             }
+            //  }
              steps {
                  echo("changeset works")
              }
