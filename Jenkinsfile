@@ -23,11 +23,10 @@ spec:
             values:
             - jenkins
   '''
-  ) {
-  node(POD_LABEL) {
-    container('conatiner-name') {
-        sh 'ls'
-      }
+) {
+node(POD_LABEL) {
+  container('conatiner-name') {
+      sh 'ls'
     }
   }
 }
