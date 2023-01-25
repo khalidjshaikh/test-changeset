@@ -32,7 +32,7 @@ node(POD_LABEL) {
 
          stage("Test changeset") {
             //  when {
-                 println(changeset "**/Jenkinsfile")
+                 println(changeset("**/Jenkinsfile"))
             //  }
             //  steps {
                  echo("changeset works")
