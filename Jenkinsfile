@@ -7,8 +7,6 @@ pipeline {
         checkout scm
       }
     }
-  }
-
        stages {
          stage("Test changeset") {
              when {
@@ -40,4 +38,5 @@ pipeline {
              }
          }
      }
+}
 }
