@@ -6,8 +6,7 @@ pipeline {
       steps {
         checkout scm
       }
-    }
-       stages {
+
          stage("Test changeset") {
              when {
                  changeset "**/Jenkinsfile"
