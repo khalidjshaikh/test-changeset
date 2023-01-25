@@ -30,7 +30,6 @@ node(POD_LABEL) {
       sh 'ls'
       sh 'pwd'
 
-           stages {
          stage("Test changeset") {
              when {
                  changeset "**/Jenkinsfile"
@@ -59,7 +58,6 @@ node(POD_LABEL) {
                      }
                  }
              }
-         }
       }
     }
   }
