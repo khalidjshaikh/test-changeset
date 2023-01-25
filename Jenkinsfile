@@ -25,7 +25,8 @@ spec:
   '''
 ) {
 node(POD_LABEL) {
-  container('conatiner-name') {
+  container('container-name') {
+      sh 'printenv|sort'
       sh 'ls'
     }
   }
