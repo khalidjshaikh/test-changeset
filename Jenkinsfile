@@ -34,13 +34,13 @@ node(POD_LABEL) {
             //  when {
                  changeset "**/Jenkinsfile"
             //  }
-             steps {
+            //  steps {
                  echo("changeset works")
-             }
+            //  }
          }
 
          stage("Display changeset?") {
-             steps {
+            //  steps {
                  script {
                      def changeLogSets = currentBuild.changeSets
                      echo("changeSets=" + changeLogSets)
@@ -57,7 +57,7 @@ node(POD_LABEL) {
                          }
                      }
                  }
-             }
+            //  }
       }
     }
   }
