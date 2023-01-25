@@ -31,6 +31,11 @@ node(POD_LABEL) {
       sh 'pwd'
 
          stage("Test changeset") {
+            git(
+              branch: 'main',
+              url: 'https://github.com/khalidjshaikh/test-changeset.git',
+              credentialsId: 'github-token'
+            )
             //  when {
                  println(changeset("**/Jenkinsfile"))
             //  }
